@@ -1,0 +1,110 @@
+.clients__table {
+    width: 100%;
+    min-width: 550px;
+    margin-bottom: 15px;
+}
+
+.clients__item {
+    display: flex;
+    padding: 12px;
+    border-bottom: 1px solid var(--color-gray-suit);
+    background-color: #fff;
+}
+
+.client__id {
+    width: 7%;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: var(--color-silver-chalice);
+    margin-right: 30px;
+}
+
+.clients__name,
+.clients__type,
+.clients__inn {
+    width: calc(10% + 5px);
+    font-size: 12px;
+    color: var(--color-black3);
+}
+
+.clients__inn{
+    width: calc(15% + 20px);
+}
+
+.clients__name {
+    width: calc(26% + 5px);
+}
+
+.clients__actions {
+    display: flex;
+    align-items: center;
+}
+
+.clients__actions button {
+    display: inline-block;
+    font-size: 12px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: transparent;
+    padding-left: 20px;
+    color: var(--color-black3);
+}
+
+.clients__edit {
+    position: relative;
+    transition: color .3s ease-in-out;
+    margin-right: 20px;
+    background-image: url('../img/edit.svg');
+}
+
+.clients__delete {
+    position: relative;
+    transition: color .3s ease-in-out;
+    background-image: url('../img/cancel.svg');
+}
+
+.clients__edit:hover {
+    transition: color .3s ease-in-out;
+    color: var(--color-emerald);
+}
+
+.clients__delete:hover {
+    transition: color .3s ease-in-out;
+    color: var(--color-burnt-sienna);
+}
+
+.action-wait {
+    background-image: none;
+}
+
+.actions__spinner {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spinner .3s ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+  
+  .clients__edit .actions__spinner svg {
+    stroke: var(--color-emerald);
+    fill: none;
+  }
+  
+  .clients__delete .actions__spinner svg {
+    stroke: var(--color-burnt-sienna);
+    fill: none;
+  }
+  
+  @keyframes spinner {
+    0%{
+      transform:rotate(0deg)
+    }
+  
+    100%{
+      transform:rotate(360deg)
+    }
+  }

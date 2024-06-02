@@ -1,0 +1,43 @@
+@media all and (max-width: 500px) {
+    .modal__content {
+        max-width: 375px;
+    }
+
+    .modal__form {
+        width: 315px;
+    }
+
+    .delete-modal__content {
+        min-width: 330px;
+    }
+}
+
+@media all and (max-width: 390px) {
+    .modal__content {
+        max-width: 315px;
+    }
+
+    .modal__form {
+        width: 255px;
+    }
+
+    .delete-modal__content {
+        min-width: 280px;
+    }
+    
+}
+
+@media all and (max-width: 320px) {
+    .modal__content {
+        max-width: 200px;
+    }
+
+    .modal__form {
+        width: 155px;
+    }
+
+    .delete-modal__content {
+        min-width: 180px;
+    }
+    
+}

@@ -1,0 +1,126 @@
+.clients {
+    padding-top: 15px;
+}
+
+.clients__heading {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.clients__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.display-info {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.display-info__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.display-info__item {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-silver-chalice);
+}
+
+.display-info__item--id,
+.display-info__sorting {
+    text-transform: uppercase;
+    color: var(--color-violet);
+}
+
+.display-info__item--id,
+.display-info__item--name,
+.display-info__item--inn {
+    cursor: pointer;
+    user-select: none;
+}
+
+.display-info__item--id {
+    padding-right: 13px;
+    margin-right: 60px;
+    background-position: right center;
+}
+
+.display-info__item--name {
+    padding-left: 48px;
+    background-position: right 18px center;
+}
+
+.display-info__sorting {
+    padding-left: 14px;
+    font-size: 10px;
+}
+
+.display-info__item--inn {
+    position: relative;
+    padding-right: 30px;
+    background-position: right 18px center;
+}
+
+.display-info__item--type {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.display-info__item--actions {
+    padding-left: 80px;
+}
+
+.clients__btn {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 9px 18px;
+    align-self: center;
+    font-size: 12px;
+    font-weight: 600;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    border: 1px solid var(--color-violet);
+    color: var(--color-violet);
+}
+
+.clients__btn svg {
+    display: block;
+    margin-right: 10px;
+    transition: fill .3s ease-in-out;
+    fill: var(--color-violet);
+}
+
+.clients__btn:hover {
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    background-color: var(--color-violet);
+    color: var(--color-white);
+}
+
+.clients__btn:hover svg {
+    transition: fill .3s ease-in-out;
+    fill: var(--color-white)
+}
+
+.sort-up,
+.sort-down {
+    background-repeat: no-repeat;
+}
+
+.sort-up {
+    background-image: url('../img/arrow-up.svg');
+}
+
+.sort-down {
+    background-image: url('../img/arrow-down.svg');
+}
+
+.clients__wrapper {
+    position: relative;
+    overflow: auto;
+}
